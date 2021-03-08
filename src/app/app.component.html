@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <a class="navbar-brand" href="#">Contributory DataBase</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">Products</button>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Coverage Verifier</a>
+          <a href="#" class="dropdown-item">A+ Auto</a>
+          <a href="#" class="dropdown-item">A+ Property</a>
+        </div>
+      </div>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Support</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <div class="input-group">
+        <div class="input-group-prepend">
+        </div>
+      </div>
+      <!--<input class="form-control mr-sm-2" type="search"  placeholder="Products...">
+      <div class="col-12 text-center pt-2 pb-2">
+        <img src="../../assets/img/user.png" width="20px">
+        <button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown">
+      </div>-->
+      <div class="col-12 text-center pt-2 pb-2 font-weight-bold" style="font-family: Tahoma">
+        <div class ="dropdown"> 
+          <img src="../../assets/img/user.png" width="30px">
+          <button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown">{{Username}}</button>
+          <div class= "dropdown-menu">
+            <a href="#" class="dropdown-item">Avatar Details</a>
+            <a href="#" class="dropdown-item">Avatar Profile</a>
+            <a href="#" class="dropdown-item">Claims Details</a>
+          </div>
+
+            
+        </div>
+      </div>
+      <!--<button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>-->
+    </form>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <h2>Contributory DataBase Dashboard </h2>
+  <router-outlet></router-outlet>
+</div>

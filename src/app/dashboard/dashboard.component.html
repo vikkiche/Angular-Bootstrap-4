@@ -1,0 +1,271 @@
+
+<h5>Dashboard</h5>
+<div class="row">
+  <!-- Box 1 -->
+  <div class="col-lg-3 pb-3" style="background-color: #e9e6e6;">
+    <div class="row">
+      <div class="col-11 text-white text-center mx-2 rounded pt-2 pv-2 font-weight-bold" style="background-color: #cc1111; font-family: 'Nunito', 'sans-serif'" >
+       <!-- {{  Designation }}--> Avatar Details
+      </div>
+      
+      <div class="col-12 text-center pt-2 pb-2 font-weight-bold" style="font-family: Tahoma">
+        {{Username}}
+      </div>
+      <div class="col-12 text-center pt-2 pb-2" style="font-family: PT Sans">User Summary</div>
+      <div class="col-12 mb-3">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            NO. OF Cliams
+            <span class="badge badge-secondary badge-pill" style="font-size: 13px;">
+              {{NumOfTeamMembers}}
+            </span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            TOTAL COST OF ALL Claims
+            <span class="badge badge-secondary badge-pill" style="font-size: 13px;">
+              {{TotalCostOfAllProjects | currency:'USD'}} K
+            </span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            PENDING Cliams
+            <span class="badge badge-secondary badge-pill" style="font-size: 13px;">
+              {{PendingTasks}}
+            </span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+           Cliams/Products Guide
+            <span class="badge badge-secondary badge-pill" style="font-size: 13px;">
+              {{UpcomingProjects}}
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- Box 2 -->
+  <div class="col-lg-6">
+    <div class="row">
+      <div class="col-12 pt-0 pb-2" style="background-color: #e9e6e6">
+        <div class="row mt-2">
+          <div class="col-6 text-left">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">All Documents</button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">User Guides</a>
+                <a href="#" class="dropdown-item">Programming Specs</a>
+                <a href="#" class="dropdown-item">Data Recovery</a>
+                <a href="#" class="dropdown-item">User Claims Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 text-right">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">All Dates/Years</button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">3020</a>
+                <a href="#" class="dropdown-item">3019</a>
+                <a href="#" class="dropdown-item">3018</a>
+                <a href="#" class="dropdown-item">3017</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-11 mx-auto mt-1 text-white text-center pt-2 pb-2 rounded font-weight-bold" style="background-color: #718d97;">Documents</div>
+      <div class="col-12">
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th>DocumentName</th>
+              <th>Deacription</th>
+              <th>FileCount</th>
+              <th>Date Added</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>User Guides</td>
+              <td> File </td>
+              <td>5</td>
+              <td>09.09.3030</td>
+            </tr>
+            <tr>
+              <td>Programming Specs</td>
+              <td> File </td>
+              <td>1</td>
+              <td>09.09.3030</td>
+            </tr>
+            <tr>
+              <td>Data Dictionary</td>
+              <td> File </td>
+              <td>20</td>
+              <td>09.09.3030</td>
+             </tr>
+        </tbody>
+        </table>
+      </div>
+
+
+      <div class="col-11 mx-auto mt-1 text-white text-center pt-2 pb-2 mx-2 rounded font-weight-bold" style="font-family: PT Sans; background-color:#718d97">User Management</div>
+      <div class="container col-11 text-right"><button class="btn btn-warning my-2 my-sm-0" type="submit">Invite New User</button></div>
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-title text-center">
+                <h4>Invite New User</h4>
+              </div>
+              <div class="d-flex flex-column text-center">
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password1" placeholder="Select Permission Group">
+                  </div>
+                  <button type="button" class="btn btn-info btn-block btn-round">Send Invitation</button>
+                </form>
+                
+                
+              </div>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+        <div class="col-12">
+          <table class=" mt-2 table table-bordered table-striped">
+
+            <thead>
+              <tr>
+                <th>FirstName</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Permission</th>
+                <th>Status</th>
+                <th>Date Added</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><b>John</b></td>
+                <td><b>Smith</b></td>
+                <td><b>Jsmith@xyz.com</b></td>
+                <td><b>admin</b></td>
+                <td><b>active</b></td>
+                <td><b>03.03.3030</b></td>
+              </tr>
+              <tr>
+                <td><b>Bob</b></td>
+                <td><b>Micky</b></td>
+                <td><b>Bobm@xyz.com</b></td>
+                <td><b>Rootadmin</b></td>
+                <td><b>active</b></td>
+                <td><b>06.03.3030</b></td>
+              </tr>
+              <tr>
+                <td><b>Saitama</b></td>
+                <td><b>Punch</b></td>
+                <td><b>spunch.com</b></td>
+                <td><b>admin</b></td>
+                <td><b>active</b></td>
+                <td><b>09.03.3030</b></td>
+              </tr>
+              <tr>
+                <td><b>Aang</b></td>
+                <td><b>Avatar</b></td>
+                <td><b>aaava@xyz.com</b></td>
+                <td><b>admin</b></td>
+                <td><b>active</b></td>
+                <td><b>03.03.3030</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+  </div>
+
+  <!-- Box 3 -->
+    <div class="col-lg-3 pb-3" style="background-color: #e9e6e6;">
+      <div class="row">
+        <div class="col-11 mt-1 text-white text-center mx-2 rounded pt-2 pb-2 font-weight-bold" style="background-color: #718d97; font-family: 'Nunito', 'sans-serif'" >Select Product</div>
+        <div class="col-lg-12 pt-2">
+          <div class="accordion" id="accordionExample">
+            <!-- Accordion 1 -->
+            <div class="card">
+              <div class="card-header bg-secondary" id="card1">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#cardBody1">Coverage Verifier</button>
+                </h2>
+              </div>
+              <div id="cardBody1" class="collapse show" data-parent="#accordionExample">
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <a href="#" class="Link text-Red">Cliams</a>
+                    <a href="#" class="Link text-Red">Documents</a>
+                    <a href="#" class="Link text-Red">User Management</a>
+                  </ul> 
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion 2 -->
+            <div class="card">
+              <div class="card-header bg-secondary" id="card2">
+                <h2 class="mb-0">
+                  <button class="btn text-white" type="button" data-toggle="collapse" data-target="#cardBody2">A+ Auto</button>
+                </h2>
+              </div>
+              <div id="cardBody2" class="collapse" data-parent="#accordionExample">
+                
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <a href="#" class="Link text-Red">Cliams</a>
+                      <a href="#" class="Link text-Red">Documents</a>
+                      <a href="#" class="Link text-Red">User Management</a>
+                    </ul>
+                  
+                
+                  </div>
+              </div>
+            </div>
+
+
+            <!-- Accordion 3 -->
+            <div class="card">
+              <div class="card-header bg-secondary" id="card3">
+                <h2 class="mb-0">
+                  <button class="btn text-white" type="button" data-toggle="collapse" data-target="#cardBody3">A+ Property</button>
+                </h2>
+              </div>
+              <div id="cardBody3" class="collapse" data-parent="#accordionExample">
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <a href="#" class="Link text-Red">Cliams</a>
+                    <a href="#" class="Link text-Red">Documents</a>
+                    <a href="#" class="Link text-Red">User Management</a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            
+
+
+          </div>
+        </div>
+      </div>
+     </div>
+</div>
+
+
+
